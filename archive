@@ -3,3 +3,6 @@ from bs4 import BeautifulSoup
 
 page = requests.get("https://web.archive.org/web/20161025170331/http://www.nga.gov/collection/anA1.htm")
 print(page)
+
+soup = BeautifulSoup(page.text,"html.parser")
+print(soup.prettify())
