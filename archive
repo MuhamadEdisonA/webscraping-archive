@@ -12,3 +12,7 @@ print(content)
 
 list_items = content.find_all("a")
 print(list_items)
+
+for item in list_items:
+    print("Artist: ", item.text)
+    print("Link: ", item.get("href"))
