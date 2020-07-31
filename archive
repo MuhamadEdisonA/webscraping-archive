@@ -9,3 +9,6 @@ print(soup.prettify())
 
 content = soup.find(class_="BodyText")
 print(content)
+
+list_items = content.find_all("a")
+print(list_items)
